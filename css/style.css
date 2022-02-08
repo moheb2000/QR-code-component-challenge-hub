@@ -1,2 +1,57 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-light-gray: hsl(212, 45%, 89%);
+  --cl-grayish-blue: hsl(220, 15%, 55%);
+  --cl-dark-blue: hsl(218, 44%, 22%);
+
+  --fs-default: 15px;
+
+  font: 400 var(--fs-default) Outfit;
+}
+
+@media all and (min-width: 768px) {
+  :root {
+    --fs-default: 18px;
+  }
+}
+
+body {
+  background: var(--cl-light-gray);
+  text-align: center;
+}
+
+h1 {
+  color: var(--cl-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+p {
+  color: var(--cl-grayish-blue);
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  background: var(--cl-white);
+  max-width: 375px;
+  width: calc(80% - 2rem);
+  margin: 5% auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.img-card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
